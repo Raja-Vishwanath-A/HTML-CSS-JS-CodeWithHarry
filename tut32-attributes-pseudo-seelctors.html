@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child pseudo selectors</title>
+    <style>
+        input {
+            display: block;
+            margin: 10px;
+        }
+
+        .container {
+            width: 300px;
+            margin: 10px auto;
+        }
+
+        input[type='text'] {
+            border: 2px solid red;
+            padding: 10px;
+        }
+        
+        a[target] {
+            color: brown;
+        }
+        /* among a[target] and a[target='_self'] the one written last applies */
+        a[target='_self'] {
+            color: rgb(36, 235, 18);
+        }
+        
+
+        /* li:nth-child(3) {
+            background-color: aqua;
+        } */
+
+        /* li:nth-child(3n+0) {
+            background-color: red;
+        } */
+
+        li:nth-child(odd) {
+            background-color: rgb(47, 255, 0);
+        }
+
+        li:nth-child(even) {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1><a href="http://google.com" target="_blank">Go to Google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
+
+        <form action="noaction.php" class="form-control">
+            <input type="text" placeholder="Enter ypur name">
+            <input type="password" placeholder="Enter ypur password">
+            <input type="submit" value="Submit now">
+            <input type="reset" value="Reset now">
+
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item 1</li>
+            <li class="item" id="item-2">Item 2
+                <p>This is testing nth child property</p>
+            </li>
+            <li class="item" id="item-3">Item 3</li>
+            <li class="item" id="item-4">Item 4</li>
+            <li class="item" id="item-5">Item 5</li>
+            <li class="item" id="item-6">Item 6</li>
+            <li class="item" id="item-7">Item 7</li>
+            <li class="item" id="item-8">Item 8</li>
+            <li class="item" id="item-9">Item 9</li>
+            <li class="item" id="item-10">Item 10</li>
+        </ul>
+
+    </div>
+</body>
+
+</html>

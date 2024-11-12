@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bos Shadows and Text Shadows</title>
+    <style>
+        .container {
+            display: flex;
+            
+        }
+
+        .card {
+            /* border: 2px solid red; */
+            padding: 4px 14px;
+            margin: 10px;
+            background-color: beige;
+            text-align: center;
+
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 10px 10px green; */
+
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: 10px 10px 10px green; */
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: 2px 2px 10px 5px green; */
+
+            /* inside shadow  */
+            box-shadow: inset 10px 10px 10px red;
+            
+            /* multiple shadows */
+            /* box-shadow: 10px 10px green, inset 10px 10px red; */
+            /* box-shadow: 10px 10px 10px 20px green, inset 10px 10px 10px 20px red; */
+        }
+
+        .card h2 {
+            text-shadow: -1px 0px 0.5px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card-1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quae ipsam odit fugiat, non dolor ab laudantium eveniet officia veritatis vero ex illum repudiandae voluptates sequi modi nihil deleniti earum, totam consectetur quisquam. In veritatis esse voluptates libero dolorum voluptas.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>card-2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quae ipsam odit fugiat, non dolor ab laudantium eveniet officia veritatis vero ex illum repudiandae voluptates sequi modi nihil deleniti earum, totam consectetur quisquam. In veritatis esse voluptates libero dolorum voluptas.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card-3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quae ipsam odit fugiat, non dolor ab laudantium eveniet officia veritatis vero ex illum repudiandae voluptates sequi modi nihil deleniti earum, totam consectetur quisquam. In veritatis esse voluptates libero dolorum voluptas.</p>
+        </div>
+    </div>
+</body>
+</html>

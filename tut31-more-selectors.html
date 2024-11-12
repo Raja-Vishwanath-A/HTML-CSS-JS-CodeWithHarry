@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selectors</title>
+    <style>
+        /* inside a div any li and howerver deep p this applies */
+        div li p {
+            background-color: aqua;
+        }
+
+        /* inside a div immediate child p this applies */
+        div>p {
+            background-color: bisque;
+        }
+
+        /* if div is immediate previous sibling of p this applies  */
+        div+p {
+            background-color: brown;
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <p>This is a div li paragraph</p>
+                </li>
+            </ul>
+        </div>
+        <h3>this is a mini heading</h3>
+        <p>This is a div p paragraph</p>
+    </div>
+    <p>This is just a p paragraph</p>
+</body>
+
+</html>

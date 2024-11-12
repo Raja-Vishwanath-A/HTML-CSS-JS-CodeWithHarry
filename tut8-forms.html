@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is HTML Forms tutorial</h2>
+
+    <form action="backend.php">
+
+        <div>
+            <label for="textid">Name:</label> <input type="text" name="myName" id="textid">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myNum">
+        </div>
+        <br>
+        <div>
+            <label for="e">Eligibility:</label> <input type="checkbox" name="myEligibility" id="e">
+        </div>
+        <br>
+        <div>
+            Gender: Male<input type="radio" name="myGender">
+            Female<input type="radio" name="myGender">
+            Other<input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Tell us about yourself: <br> <textarea name="nytextarea" cols="40" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            Resume: <input type="file" name="myFile">
+        </div>
+        <br>
+
+        <div>
+            <label for="car">Choose your car preference:</label>
+            <select name="myCar" id="car">
+                <option value="Innova">Innova</option>
+                <option value="Breeza">Breeza</option>
+                <option value="Tesla" selected>Tesla</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>

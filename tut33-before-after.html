@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selectors</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        header::before {
+            background-image: url('https://picsum.photos/1920/1080') ;
+            background-repeat: no-repeat;
+            /* background-repeat: no-repeat; */
+            content: "";
+            position: absolute;
+            top:0px;
+            left: 0px;
+            
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        .navigation {
+            /* border: 2px solid red; */
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        .navigation li {
+            font-size: 18px;
+            font-weight: bold;
+            list-style: none;
+            padding: 4px;
+            margin: 5px;
+            /* text-align: center; */
+            
+        }
+        .item {
+            /* width:90px; */
+            
+        }
+
+        section {
+            height: 300px;
+            /* width: 1000px; */
+            margin: 20px 200px;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            font-weight: bold;
+        }
+
+        /* section::before {
+            content: "This is a section before content";
+        } */
+
+        h1{
+            font-size: 3rem;
+        }
+
+        p{
+            font-size: 20px;
+            text-align: center;
+            padding: 0px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>This is a heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ut vel, mollitia quo voluptate sint officia qui sequi saepe laboriosam voluptatem minima? Doloribus deserunt soluta necessitatibus enim quam ea, eum tempore. Consequatur ratione totam dolores magni consequuntur nostrum eum dignissimos.</p>
+    </section>
+    <hr>
+</body>
+</html>

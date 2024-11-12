@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respsonsive Design</title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+        .container {
+            border: 2px solid red;
+            height: 80vh;
+            width: 50vw;
+            font-size: 10px;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        #item-1 {
+            /* font-size: em units take reference of font size of immediate parent */
+            /* font-size: 4em; */
+            /* padding em units take font-size of item-1 font-size as reference */
+            /* padding: 3em; */
+
+        }
+
+        #item-2 {
+            /* rem unit take reference of overall html font-size */
+            /* font-size: 3rem; */
+            /* padding: 3rem; */
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="item-1">This is first heading</h1>
+        <h1 id="item-2">This is second heading</h1>
+        <h1 id="item-3">This is third heading</h1>
+    </div>
+</body>
+</html>

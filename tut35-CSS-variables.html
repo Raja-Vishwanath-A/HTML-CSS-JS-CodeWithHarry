@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+             --box-color: aqua; /* global variable */
+             --maxw: 400px;
+        }
+        .container {
+            max-width: var(--maxw);
+            margin: 10px auto;
+            border: 3px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            /* --box-color: aqua; local variable */
+            height: 200px;
+            width: 200px;
+            margin: 4px;
+            border: 3px solid red;
+            background-color: var(--box-color);
+            box-shadow: 5px 5px var(--box-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

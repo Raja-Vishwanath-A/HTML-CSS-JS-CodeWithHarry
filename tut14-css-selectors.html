@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* id selector */
+        #firstp{
+            color: blue;
+            background-color: aquamarine;
+        }
+        /* class selector */
+        .redText{
+            color: red;
+        }
+        .YellowBG{
+
+            color: green;
+            background-color: yellow;
+        }
+        /* element selector */
+        p{
+            color: pink;
+            border: 2px solid violet;
+        }
+        span, footer {
+            color: chartreuse;
+            background-color: blanchedalmond;
+            border: 2px solid brown;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is a CSS Selectors Tutorial</h3>
+    <p id="firstp" class="redText YellowBG">This is a paragraph</p>
+    <div>   
+        <p class="redText">This is another paragraph in div</p>
+    </div>
+    <p id="lastp" class=" redText YellowBG">This is yet another paragraph</p>
+     <span>This is span</span>
+     <footer>This is footer</footer>
+</body>
+</html>
+
+<!-- id preceeds class 
+     css of class written last preceeds css of previous class
+      id and class preceed element css like p or div-->

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container{
+            background-color: aqua;
+            color: white;
+        }
+        .box {
+            height: 250px;
+            width: 250px;
+            background-color: blue;
+            
+            animation-name: vishwa2;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+            
+            position: relative; /*used to initiate animation 2 vishwa2 */
+            
+            /* google animation shorthand */
+            /* animation: name duration timing-function delay iteration-count fill-mode */
+            /* animation: vishwa3 5s ease-in-out 5s 2 forwards; */
+        }
+
+        @keyframes vishwa1 {
+            from {
+                width: 150px;
+                /* height: 150px; */
+            }
+            to {
+                width: 1000px;
+                /* height: 600px; */
+            }
+        }
+
+        @keyframes vishwa2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+            50% {
+                top: 250px;
+                left: 250px;
+            }
+            75% {
+                top: 0px;
+                left: 250px;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+        @keyframes vishwa3 {
+            from {
+                height: 100px;
+            }
+            to{
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>This is a box</p>
+        </div>
+    </div>
+</body>
+</html>

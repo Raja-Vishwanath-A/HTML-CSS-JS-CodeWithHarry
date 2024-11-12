@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <script>
+        var str ='This is a string';
+        console.log(str);
+
+        //indexOf() returns the index of first occurrence of substring
+        var position = str.indexOf('is');
+        // console.log(position);
+        //lastIndexOf() gives the index of last occurrence of substring
+        position = str.lastIndexOf('is')
+        // console.log(position);
+
+        // To get sub-string from a string
+        // slice(i,j) returns substring from index position i to j-1
+        var substr1 = str.slice(1,6);
+        // console.log(substr1);
+        // substring() works similar to slice, only slice can have negative values
+        substr1 = str.substring(1,6);
+        // console.log(substr1);
+        
+        // substr(i,j) returns substring from index i, returning j characters.
+        substr1 = str.substr(1,6);
+        // console.log(substr1);
+        substr1 = str.substr(-8,6);
+        console.log(substr1);
+
+        var replaced = str.replace('string', 'Vishwa');
+        // console.log(str);
+        // console.log(replaced);
+        //note that variable 'str' doesn't change but 'replaced' is assigned
+
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+
+        //adding a new string at end using concat function
+        var newstring = str.concat('. This is concat sentence.')
+        // console.log(str)
+        // console.log(newstring)
+
+        // adding new string using simple +
+        newstring2 = str + newstring;
+        // console.log(newstring2);
+
+        //trimming white spaces from start and end
+        strWithSpcaes = '    This is a     string with     whitespaces.    ';
+        // console.log(strWithSpcaes);
+        // console.log(strWithSpcaes.trim());
+
+        //character at index
+        var char2 = str.charAt(2);
+        // var charcode2 = str.charCodeAt(2);
+        // console.log(charcode2);
+
+        console.log(str[3]);
+    </script>
+</body>
+</html>

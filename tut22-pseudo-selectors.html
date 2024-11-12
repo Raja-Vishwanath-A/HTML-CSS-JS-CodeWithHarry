@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: rgb(173, 237, 110);
+            padding: 34px;
+            margin: 34px auto;
+            width: 700px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            color: blue;
+            background-color: rgb(249, 249, 11);
+        }
+        
+        a:hover {
+            background-color: rgb(152, 144, 237);
+            color: rgb(45, 40, 40)
+        }
+        
+        a:active {
+            color: rgb(247, 249, 248);
+            background-color: rgb(53, 243, 72);
+        }
+        
+        .btn {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(229, 112, 136);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+        
+        .btn:hover {
+            color: black;
+            background-color: crimson;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my Heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nobis laborum, repudiandae, atque est eos quos excepturi quasi maxime eaque, quas repellat commodi maiores. Aut delectus, quas nostrum libero iure quaerat in. Beatae exercitationem blanditiis vitae tenetur quas, aut iste!</p>
+        <a href="https://pichku.com" target='_blank' class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

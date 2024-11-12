@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Alerts and Prompts</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>This is a container</h3>
+    </div>
+
+    <script>
+        // alert("You are in tutorial 54.");
+
+        //alert doesn't return anything
+        //prompt gives string
+        //confirm gives boolean true or false
+
+        // let name = prompt("Enter your Name", "Guest");
+        // console.log(name);
+
+        let deletePost = confirm(" Do you really want to delete this post?");
+        console.log(deletePost);
+        
+        if(deletePost){
+            //code if you want the post to be deleted
+            console.log("Your post has been deleted successfully.");
+        }
+        else {
+            //code if you want the post to stay
+            console.log("Your post has not been deleted.");
+        }
+
+    </script>
+</body>
+</html>

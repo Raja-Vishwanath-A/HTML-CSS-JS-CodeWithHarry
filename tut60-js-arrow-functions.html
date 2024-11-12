@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrow Functions</title>
+</head>
+<body>
+    <div class="contianer">
+        This is JS Arrow Functions Tutorial.
+    </div>
+
+    <script>
+        // function greet() {
+        //     console.log("Good Morning");
+        // }
+        // greet();
+
+        //Arrow function
+        let greet = ()=> {
+            console.log("Good Morning");
+        }
+        greet();
+
+
+        setTimeout(() => {
+            console.log("We are in setTimeout Function.")
+        }, 4000);
+
+
+        let sum = (a,b)=>{
+            return a+b;
+        };
+
+        console.log(sum(40,30));
+        
+        
+        let sum2 = (a,b)=> a+b;
+        console.log(sum2(45,55));
+
+        let half = a => a/2;
+        console.log(half(30));
+
+
+        //lexical this, takes object as parent obj1
+        let obj1 = {
+            greeting: ", Nice to meet you.",
+            names : ["Raja", "Harry", "Alex", "Biswa", "Bhuvan"],
+            speak() {
+                this.names.forEach(teacher => {
+                    console.log(" Howdy Rowdy " + teacher + this.greeting);
+                });
+            }
+        }
+
+        obj1.speak();
+
+
+        let obj2 = {
+            greeting: ", Nice to meet you.",
+            names : ["Raja", "Puli", "Arun", "Devansh", "Gotti"],
+            speak() {
+                this.names.forEach(function s(teacher) {
+                    console.log(" Howdy Rowdy " + teacher);
+                });
+            }
+        }
+
+        obj2.speak();
+
+
+// this doesn't fetch object from parent, it searches inside
+        let obj3 = {
+            greeting: ", Nice to meet you.",
+            names : ["Raja", "Shyam", "Yashwanth", "Pavan sai", "Sai Teja"],
+            speak() {
+                this.names.forEach(function s(teacher) {
+                    console.log(" Howdy Rowdy " + teacher + " " + this.greeting);
+                });
+            }
+        }
+
+        obj3.speak();
+    </script>
+</body>
+</html>

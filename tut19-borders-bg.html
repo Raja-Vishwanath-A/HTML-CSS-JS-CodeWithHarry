@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds</title>
+    <style>
+        #firstPara {
+            background-color: red;
+            height: 50px;
+            width: 200px;
+            /* border: 5px;
+            border-style: solid ;
+            border-color: green; */
+            border: 3px solid green;
+            border-radius: 15px;
+        }
+        #secondPara {
+            background-color: rgb(10, 243, 37);
+            height: 50px;
+            width: 200px;
+            border-top: 4px solid violet;
+            border-right: 4px solid rgb(32, 5, 239);
+            border-bottom: 4px solid rgb(233, 115, 12);
+            border-left: 4px solid rgb(237, 6, 10);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 5px;
+        }
+        #thirdPara {
+            height: 500px;
+            width: 500px;
+            border: 4px solid green;
+            background-image: url(/fox.jpg);
+            background-size: cover;
+            background-repeat:no-repeat;
+            /* background-position-x: left; options: left center right
+            background-position-y: bottom; options: top center bottom */
+            /* background-position: left center; left right : Xaxis, top bottom : Yaxis */
+            /* background-position: 150px 20px; 1st value X-axis, 2nd Y-axis */
+        }
+    </style>
+</head>
+<body>
+    <p id="firstPara">This is my first para</p>
+    <p id="secondPara">This is my second para</p>
+    <p id="thirdPara">This is my third para</p>
+</body>
+</html>
